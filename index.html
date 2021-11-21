@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+   <div class="body-m">
+     <div class="left"></div>
+     <div class="middle">
+       <h1>Payment Information</h1>
+      <div class="flip">
+        <div class="card">
+          <div class="big">
+            <div class="card_number">
+              <span>card number</span>
+              <p>0123 4567 8910 1112</p>
+            </div>
+            <div class="card_name">
+              <span>chardholder name</span>
+              <p>NAME SURNAME</p>
+            </div>
+            <div class="expiration">
+              <span>expiration</span>
+              <div>
+                <h5>VALID THRU</h5>
+                <i class="fas fa-caret-right"></i>
+                <p>01/23</p>
+              </div>
+            </div>
+            <div class="visa">
+              <i class="fab fa-cc-visa"></i>
+            </div>
+            <div class="mastercard">
+              <img
+                src="https://www.mastercard.az/content/dam/mccom/global/logos/logo-mastercard-mobile.svg"
+                alt=""
+              />
+            </div>
+            <div class="maestro">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Maestro_2016.svg/1200px-Maestro_2016.svg.png"
+                alt=""
+              />
+            </div>
+            <div class="top"></div>
+            <div class="bot"></div>
+          </div>
+          <div class="ters back">
+            <div class="ters_top"></div>
+            <div class="xesh">
+              <div class="lines">
+                <p>Name Surname</p>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="stars">
+                <p>***</p>
+              </div>
+            </div>
+            <div class="grey_1"></div>
+            <div class="grey_2"></div>
+          </div>
+        </div>
+      </div>
+  
+      <br />
+  
+      <form action="">
+        <label for="name_input">Name</label>
+        <input
+          type="text"
+          pattern="[A-Z]"
+          maxlength="20"
+          class="form-control"
+          id="name_input"
+        />
+        <label for="phone1">Card Number</label>
+        <input type="text" class="form-control" id="phone1" />
+        <div class="form_div">
+          <div>
+            <label for="phone2">Expiration (mm/yy)</label>
+            <input type="text" class="form-control" id="phone2" />
+          </div>
+          <div>
+            <label for="phone3">Security Code</label>
+            <input type="text" class="form-control" id="phone3" />
+          </div>
+        </div>
+      </form>
+     </div>
+     <div class="right"></div>
+   </div>
+
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
